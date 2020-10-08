@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stiil.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">Country data</h1>
+    <form action ='/' method="POST">
+        <select name="country">
+            <option class="country" value="estonia">Estonia</option>
+            <option class="country" value="lithuania">Lithuania</option>
+            <option class="country" value="latvia">Latvia</option>
+        </select>
+        <button class="country" type="submit" name="submit">Get data</button>
+    </form>
+    <% if (countryData){%>
+        <h1 class="capital">
+          <%=countryData.name %>
+        </h1>
+            <table class="tbl">
+              <tr>
+                <th>Top Level Domain</th>
+                <td><%= countryData.topLevelDomain %></td>
+              </tr>
+    
+              <tr>
+                <th>Calling Code</th>
+                <td><%= countryData.callingCodes %></td>
+              </tr>
+    
+              <tr>
+                <th>Capital</th>
+                <td><%= countryData.capital %></td>
+              </tr>
+    
+              <tr>
+                <th>Region</th>
+                <td><%= countryData.region %></td>
+              </tr>
+    
+              <tr>
+                <th>Subregion</th>
+                <td><%= countryData.subregion %></td>
+              </tr>
+    
+              <tr>
+                <th>Population</th>
+                <td><%= countryData.population %></td>
+              </tr>
+    
+              <tr>
+                <th>Timezone</th>
+                <td><%= countryData.timezones %></td>
+              </tr>
+    
+              <tr>
+                <th>Language in a full word in English</th>
+                <td><%= countryData.languages[0].name %></td>
+              </tr>
+    
+              <tr>
+                <th>Currency code</th>
+                <td><%= countryData.currencies[0].code + " "+ countryData.currencies[0].name + " "+ countryData.currencies[0].symbol %></td>
+              </tr>
+    
+              <tr>
+                <th>Flag</th>
+                <td><img src=<%= countryData.flag %> width=150></td>
+              </tr>
+          </table>
+          <% } %>
+</body>
+</html>

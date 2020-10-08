@@ -1,0 +1,46 @@
+body{
+    background-color: wheat;
+}
+
+.heading{
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}
+
+.tbl{
+    border: solid 1px black;
+}
+
+th{
+    border: solid 1px black;
+}
+
+td{
+    border: solid 1px black;
+}
+
+
+.tbl{
+    margin-left: 300px;
+    font-size:30px;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}
+
+
+.country{
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    font-size:20px;
+}
+
+.capital{
+    margin-left:300px;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    font-size:50px;
+
+}
+
+select{
+    width:90px;
+    height:30px;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    font-size:20px;
+}
